@@ -2,34 +2,34 @@
         <h1>Comprar Medicamento</h1>
         <div>
             <h4>Codigo Medicamento</h4>    
-            <input [(ngModel)]="comprar.codigoMedicamento" />
+            <input id = 'codigoMedicamento' [(ngModel)]="comprar.codigoMedicamento" />
         </div>
         
         <div>
             <h4>Numero Identidad</h4>    
-            <input [(ngModel)]="comprar.numeroIdentidad"/> <br/><br/>    
+            <input id = 'numeroIdentidad' [(ngModel)]="comprar.numeroIdentidad"/> <br/><br/>    
         </div>
 
         <div>
             <h4>Edad</h4>    
-            <input [(ngModel)]="comprar.edad"/> <br/><br/>    
+            <input id = 'edad' [(ngModel)]="comprar.edad"/> <br/><br/>    
         </div>
 
         <div>
             <h4>Medio de Pago</h4>    
-            <input [(ngModel)]="comprar.medioPago"/> <br/><br/>    
+            <input id = 'medioPago' [(ngModel)]="comprar.medioPago"/> <br/><br/>    
         </div>
 
         <div>
             <h4>Receta</h4>    
-            <input [(ngModel)]="comprar.recetaMedica"/> <br/><br/>    
+            <input id = 'recetaMedica' [(ngModel)]="comprar.recetaMedica"/> <br/><br/>    
             </div>
         
         <div>
             <h4>Cantidad</h4>    
-            <input [(ngModel)]="comprar.cantidad"/> <br/><br/>    
+            <input id = 'cantidad' [(ngModel)]="comprar.cantidad"/> <br/><br/>    
         </div>    
-        <button (click)="comprarMedicamento()">
+        <button id = 'comprar-medicamento' (click)="comprarMedicamento()">
                 Comprar
         </button>
     </div>

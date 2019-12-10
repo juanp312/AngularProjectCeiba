@@ -2,14 +2,14 @@
     <h1>Agregar Medicamento</h1>
     <div>
         <h4>Nombre</h4>    
-        <input [(ngModel)]="medicamento.nombreMedicamento" />
+        <input id="nombreMedicamento" [(ngModel)]="medicamento.nombreMedicamento" />
     </div>
     
     <div>
         <h4>Codigo</h4>    
-        <input [(ngModel)]="medicamento.codigoMedicamento"/> <br/><br/>    
+        <input id="codigoMedicamento" [(ngModel)]="medicamento.codigoMedicamento"/> <br/><br/>    
     </div>
-    <button (click)="guardar()">
+    <button id="agregar-medicamento" (click)="guardar()">
             Guardar
     </button>
 </div>
