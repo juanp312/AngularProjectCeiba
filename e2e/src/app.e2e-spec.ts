@@ -1,4 +1,5 @@
 import { browser, element, by} from 'protractor';
+import { doesNotThrow } from 'assert';
 
 describe('Prueba flujo principal', function() {
   it('should have a title', function() {
@@ -62,6 +63,20 @@ describe('Routing Comprar Medicamento', function() {
     browser.get('http://localhost:4200/');
     element(by.id('comprar-medicamento')).click();
     expect(browser.getCurrentUrl()).toBe('http://localhost:4200/medicamento/comprar'); 
+  });
+});
+
+describe('Historial compras', function(){
+  it('historial compras', function(){
+    browser.get('http://localhost:4200/comprar/historialCompras');
+    expect(element(by.id('codigoMedicamento')).getText()).toEqual('Codigo Medicamento');
+    expect(element(by.id('numeroIdentidad')).getText()).toEqual('Numero Identidad');
+    expect(element(by.id('edad')).getText()).toEqual('Edad');
+    expect(element(by.id('medioPago')).getText()).toEqual('Medio Pago');
+    expect(element(by.id('recetaMedica')).getText()).toEqual('Receta Medica');
+    expect(element(by.id('cantidad')).getText()).toEqual('Cantidad');
+    expect(browser.getCurrentUrl()).toBe('http://localhost:4200/comprar/historialCompras');    
+    
   });
 });
 
