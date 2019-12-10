@@ -10,8 +10,8 @@ export class ApiService {
 
   constructor(private http: HttpClient) { }
 
-  getSmartphone() {
-    return this.http.get("conche");
+  getHistorialCompras() {
+    return this.http.get("http://localhost:8080/compras");
   }
 
   adicionarMedicamento(medicamento:Medicamento) {

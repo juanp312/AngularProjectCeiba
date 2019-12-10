@@ -1,0 +1,27 @@
+<div>
+    <h1>Historial Compras</h1>
+    <div>
+        <table style="width:100%">
+                <tr>
+                    <th>Codigo Medicamento</th>
+                    <th>Numero Identidad</th>
+                    <th>Edad</th>
+                    <th>Medio Pago</th>
+                    <th>Receta Medica</th>
+                    <th>Cantidad</th>
+                </tr>
+                <br/>
+                <tr *ngFor="let comprar of historial">
+                    <th>{{comprar.codigoMedicamento}}</th>
+                    <th>{{comprar.numeroIdentidad}}</th>
+                    <th>{{comprar.edad}}</th>
+                    <th>{{comprar.medioPago}}</th>
+                    <th>{{comprar.recetaMedica}}</th>
+                    <th>{{comprar.cantidad}}</th>
+                </tr>
+        </table>                  
+                  
+    <button (click)="historialCompras()">
+            Historial
+    </button>
+</div>

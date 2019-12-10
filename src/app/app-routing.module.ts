@@ -3,6 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { AgregarMedicamentosComponent } from './features/agregar-medicamentos/agregar-medicamentos.component';  
 import { BorrarMedicamentoComponent } from './features/borrar-medicamento/borrar-medicamento.component';  
 import { ComprarComponent } from './features/comprar/comprar.component';
+import { HistorialComprasComponent } from './features/historial-compras/historial-compras.component';
 
 
 const routes: Routes = [
@@ -17,7 +18,12 @@ const routes: Routes = [
   {  
     path: 'medicamento/comprar',  
     component: ComprarComponent
+  },
+  {  
+    path: 'comprar/historialCompras',  
+    component: HistorialComprasComponent
   }
+
 
 ];
 

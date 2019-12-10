@@ -7,19 +7,31 @@ import { AgregarMedicamentosComponent } from './features/agregar-medicamentos/ag
 import { BorrarMedicamentoComponent } from './features/borrar-medicamento/borrar-medicamento.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ComprarComponent } from './features/comprar/comprar.component';
+import { HistorialComprasComponent } from './features/historial-compras/historial-compras.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSliderModule } from '@angular/material/slider';
+import { MatTableModule } from '@angular/material/table';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
     AppComponent,
     AgregarMedicamentosComponent,
     BorrarMedicamentoComponent,
-    ComprarComponent
+    ComprarComponent,
+    HistorialComprasComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSliderModule,
+    BrowserAnimationsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]
